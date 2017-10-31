@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="listview_prj_item">
+        <item name="android:textSize">@dimen/txsize_18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="window_devinfo">
+        <item name="android:textSize">@dimen/txsize_mid_xx</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+        <style name="push_style">
+            <item name="android:hint">@string/style_hint</item>
+            <item name="android:inputType">number</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="push_alias">
+            <item name="android:hint">@string/alias_hint</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="push_tag">
+            <item name="android:hint">@string/tag_hint</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+
+</resources>

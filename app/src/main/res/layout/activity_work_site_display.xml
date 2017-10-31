@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sany.com.mmpapp.business.enterprise.firstActivity.WorkSiteDisplayActivity">
+    <include layout="@layout/layout_template_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/enterprisemap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </FrameLayout>
+
+
+</LinearLayout>

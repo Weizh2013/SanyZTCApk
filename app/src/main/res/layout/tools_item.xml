@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon_func"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/funcImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        android:duplicateParentState="true"
+       />
+
+    <TextView
+        android:id="@+id/funcName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/funcImg"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center_horizontal"
+        android:text="工况信息"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/funcTipsImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/funcImg"
+        android:layout_toRightOf="@+id/funcImg"
+       />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sany.com.mmpapp.business.government.fourActivity.LatlngCollectActivity">
+    <include layout="@layout/layout_template_title"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/latlngcollect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="#FFFFFF">
+        <!--四个部分都一样：ImageView + TextView-->
+        <RelativeLayout
+            android:id="@+id/first_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/startcollect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="采集开始"
+                android:background="@color/greenyellow"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/second_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/endcollect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="采集结束"
+                android:background="@color/orange"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/third_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/collectsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="提交数据"
+                android:background="@color/skyblue"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

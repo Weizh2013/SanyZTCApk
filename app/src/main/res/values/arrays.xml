@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <array name="functionDrawableArray">
+        <item>@drawable/select_search_workdata</item>
+        <item>@drawable/select_replay_path</item>
+        <item>@drawable/select_oilvalue_supervise</item>
+
+    </array>
+
+    <string-array name="fuctionNameArray">
+        <item>绘工地</item>
+        <item>绘消纳场</item>
+        <item>绘限速圈</item>
+
+    </string-array>
+
+    <integer-array name="tipNumArray">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+    </integer-array>
+</resources>

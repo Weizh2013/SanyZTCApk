@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "sany.com.mmpapp"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        sourceSets {
+            main {
+
+                jniLibs.srcDirs = ['libs']
+            }
+
+            // Move the tests to tests/java, tests/res, etc...
+
+            // Move the build types to build-types/<type>
+            // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+            // This moves them out of them default location under src/<type>/... which would
+            // conflict with src/ being used by the main source set.
+            // Adding new build types or product flavors should be accompanied
+            // by a similar customization.
+
+        }
+
+        /*signingConfigs {
+            release {
+                keyAlias 'tianKey'
+                keyPassword 'tian123'
+                storeFile file('E:/sj/tianKey')
+                storePassword 'tian123'
+            }
+
+            debug{
+                keyAlias 'androiddebugkey'
+                keyPassword 'android'
+                storeFile file('E:/sj/debug.keystore')
+                storePassword 'android'
+
+            }
+        }*/
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile files('libs/AMap_Search_V3.4.0_20160811.jar')
+    compile files('libs/Volley.jar')
+    compile files('libs/AMap_Location_V2.8.0_20160811.jar')
+    compile files('libs/AMap3DMap_3.4.0_AMapNavi_1.9.2_20160830.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/jpush-android_v3.0.1.jar')
+    compile files('libs/jcore-android_v1.1.0.jar')
+    compile files('libs/userlib/commons-logging-1.1.1.jar')
+    compile files('libs/userlib/fluent-hc-4.2.5.jar')
+    compile files('libs/userlib/httpclient-4.2.5.jar')
+    compile files('libs/userlib/httpclient-cache-4.2.5.jar')
+    compile files('libs/userlib/httpcore-4.2.4.jar')
+    compile files('libs/userlib/httpmime-4.2.5.jar')
+    compile files('libs/butterknife-7.0.1.jar')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    // appcompat-v7:25.3.1  appcompat-v7:22.1.1
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.2'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2'
+}

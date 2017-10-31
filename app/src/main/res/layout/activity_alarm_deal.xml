@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_template_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1dp"
+                android:background="@color/whitesmoke"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/sfName"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="司机"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/eiName"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text=""
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="违规原因"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/paraNameShow"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text=""
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="违规时间"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/startTime"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="已处理人"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/dealer"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center|left"
+                        android:text="已处理意见"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_weight="6"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/contentcheck"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/shape"
+                        android:gravity="center"
+                        android:text="查看"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="处理时间"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/dealTime"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:text="处理结论"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/lawer_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@color/whitesmoke"
+                        android:gravity="left"
+                        android:hint="请填写处理结果"
+                        android:lines="4"
+                        android:text=""
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="图片说明"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/choicepicture"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:text="选择"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/getpicture"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape"
+
+                            android:gravity="center"
+                            android:text="拍照"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/picturedisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/whitesmoke"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/first_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/startcollect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/submitpicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:text="提交"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/collectsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

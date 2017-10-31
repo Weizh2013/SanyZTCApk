@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sany.com.mmpapp.business.enterprise.secondActivity.HistoryTrackActivity">
+    <include layout="@layout/layout_template_title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/lay_player_container"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:background="#86bee8"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dip"
+                android:src="@drawable/play" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_show_time_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:gravity="bottom"
+                    android:text="正在播放"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_show_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top"
+                    android:text="2014-5-1 10:33:30"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map_postrace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lay_player_container"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
